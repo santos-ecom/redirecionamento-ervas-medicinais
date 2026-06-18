@@ -2,12 +2,13 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=https://forseniors.shop/pages/ervas-frances" />
     <title>Redirecionando...</title>
 </head>
 <body>
     <script>
-        window.location.replace("https://forseniors.shop/pages/ervas-frances");
+        var baseUrl = "https://forseniors.shop/pages/ervas-frances";
+        var search = window.location.search;
+        window.location.replace(search ? baseUrl + search : baseUrl);
     </script>
 </body>
 </html>
