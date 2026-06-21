@@ -1,13 +1,14 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=https://forseniors.shop/pages/ervas-hungaro" />
     <title>Redirecionando...</title>
 </head>
 <body>
     <script>
-        window.location.replace("https://forseniors.shop/pages/ervas-hungaro");
+        var baseUrl = "https://forseniors.shop/pages/ervas-hungaro";
+        var search = window.location.search;
+        window.location.replace(search ? baseUrl + search : baseUrl);
     </script>
 </body>
 </html>
