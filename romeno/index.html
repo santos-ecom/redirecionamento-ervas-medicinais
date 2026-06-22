@@ -2,12 +2,16 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=https://forseniors.shop/ro/pages/ervas-romeno" />
     <title>Redirecionando...</title>
 </head>
 <body>
     <script>
-        window.location.replace("https://forseniors.shop/ro/pages/ervas-romeno");
+        var dest = "https://forseniors.shop/ro/pages/ervas-romeno";
+        var params = window.location.search;
+        window.location.replace(dest + params);
     </script>
+    <noscript>
+        <meta http-equiv="refresh" content="0; url=https://forseniors.shop/ro/pages/ervas-romeno" />
+    </noscript>
 </body>
 </html>
