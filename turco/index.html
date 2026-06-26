@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -6,12 +6,9 @@
 </head>
 <body>
     <script>
-        var dest = "https://forseniors.shop/tr/pages/ervas-turco";
-        var params = window.location.search;
-        window.location.replace(dest + params);
+        var baseUrl = "https://forseniors.shop/pages/ervas-turco";
+        var search = window.location.search;
+        window.location.replace(search ? baseUrl + search : baseUrl);
     </script>
-    <noscript>
-        <meta http-equiv="refresh" content="0; url=https://forseniors.shop/tr/pages/ervas-turco" />
-    </noscript>
 </body>
 </html>

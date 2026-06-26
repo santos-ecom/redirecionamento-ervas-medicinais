@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -6,12 +6,9 @@
 </head>
 <body>
     <script>
-        var dest = "https://forseniors.shop/hu/pages/ervas-hungaro";
-        var params = window.location.search;
-        window.location.replace(dest + params);
+        var baseUrl = "https://forseniors.shop/pages/ervas-hungaro";
+        var search = window.location.search;
+        window.location.replace(search ? baseUrl + search : baseUrl);
     </script>
-    <noscript>
-        <meta http-equiv="refresh" content="0; url=https://forseniors.shop/hu/pages/ervas-hungaro" />
-    </noscript>
 </body>
 </html>

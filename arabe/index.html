@@ -1,17 +1,17 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Redirecionando...</title>
 </head>
+
 <body>
     <script>
-        var dest = "https://lifeeasyebooks.shop/ar/pages/ervas-arabe";
-        var params = window.location.search;
-        window.location.replace(dest + params);
+        var baseUrl = "https://lifeeasyebooks.shop/pages/ervas-arabe";
+        var search = window.location.search;
+        window.location.replace(search ? baseUrl + search : baseUrl);
     </script>
-    <noscript>
-        <meta http-equiv="refresh" content="0; url=https://lifeeasyebooks.shop/ar/pages/ervas-arabe" />
-    </noscript>
 </body>
+
 </html>
