@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -6,9 +6,12 @@
 </head>
 <body>
     <script>
-        var baseUrl = "https://forseniors.shop/pages/ervas-croata";
-        var search = window.location.search;
-        window.location.replace(search ? baseUrl + search : baseUrl);
+        var dest = "https://forseniors.shop/hr/pages/ervas-croata";
+        var params = window.location.search;
+        window.location.replace(dest + params);
     </script>
+    <noscript>
+        <meta http-equiv="refresh" content="0; url=https://forseniors.shop/hr/pages/ervas-croata" />
+    </noscript>
 </body>
 </html>
