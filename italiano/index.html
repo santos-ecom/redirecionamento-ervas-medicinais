@@ -8,7 +8,14 @@
     <script>
         var dest = "https://forseniors.shop/it/pages/ervas-italiano";
         var params = window.location.search;
-        window.location.replace(dest + params);
+        var hash = window.location.hash;
+        
+        // Se a url de destino ja tiver interrogacao, trocamos o '?' por '&' nos parametros
+        if (params && dest.indexOf('?') !== -1) {
+            params = params.replace('?', '&');
+        }
+        
+        window.location.replace(dest + params + hash);
     </script>
     <noscript>
         <meta http-equiv="refresh" content="0; url=https://forseniors.shop/it/pages/ervas-italiano" />
