@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecionando...</title>
+</head>
+<body>
+    <script>
+        var dest = "https://lifeeasyebooks.shop/mk/pages/ervas-macedonio";
+        var params = window.location.search;
+        var hash = window.location.hash;
+        
+        // Se a url de destino ja tiver interrogacao, trocamos o '?' por '&' nos parametros
+        if (params && dest.indexOf('?') !== -1) {
+            params = params.replace('?', '&');
+        }
+        
+        window.location.replace(dest + params + hash);
+    </script>
+    <noscript>
+        <meta http-equiv="refresh" content="0; url=https://lifeeasyebooks.shop/mk/pages/ervas-macedonio" />
+    </noscript>
+</body>
+</html>
